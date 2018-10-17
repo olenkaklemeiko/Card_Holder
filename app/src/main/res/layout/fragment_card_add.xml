@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/buttons"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical">
+
+            <com.mvp_dev.image_cropper.CropImageView
+                android:id="@+id/image_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/card_add" />
+
+            <Button
+                android:id="@+id/add_card_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@color/buttonsColours"
+                android:text="@string/add_card_icon"
+                android:textColor="@color/textColorDark" />
+
+            <EditText
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="@string/name"
+                android:textColor="@color/textColorDark"
+                android:textColorHint="@color/textColorDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/text_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/card_number"
+                    android:textColor="@color/textColorDark"
+                    android:textColorHint="@color/textColorDark" />
+
+                <ImageButton
+                    android:id="@+id/button_scanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/barcode_add" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/separator"
+        android:dividerPadding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@color/buttonsColours"
+            android:padding="12dp"
+            android:text="@string/cancel"
+            android:textColor="@color/textColorDark" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/buttonsColours"
+            android:text="@string/ok"
+            android:textColor="@color/textColorDark" />
+
+    </LinearLayout>
+
+</RelativeLayout>

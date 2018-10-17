@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Light Theme-->
+    <color name="colorPrimary">#3B2151</color>
+    <color name="colorPrimaryDark">#2D193D</color>
+    <color name="colorAccent">#00897B</color>
+    <color name="buttonsColours">#242625</color>
+    <color name="textColorWhite">#212121</color>
+    <color name="colorBackground">#cfd8dc</color>
+
+    <!--Dark Theme-->
+    <color name="textColorDark">#FAFAFA</color>
+    <color name="colorBackgroundDark">#212121</color>
+</resources>
